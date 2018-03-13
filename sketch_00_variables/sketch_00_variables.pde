@@ -19,3 +19,7 @@ println(monTexte);
 // concaténer du texte
 monTexte = monTexte + monDeuxiemeTexte;
 println(monTexte);
+
+
+boolean isDrawing = true;
+println(isDrawing);
