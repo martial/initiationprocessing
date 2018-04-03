@@ -48,8 +48,9 @@ public void setup() {
 
 public void draw() {
   // Set background color, noStroke and fill color
-  background(125, 255, 125);
-  fill(255);
+  background(0);
+  
+ 
   noStroke();
 
   fft.analyze();
@@ -61,6 +62,8 @@ public void draw() {
   float frequenceBasse = sum[0];
   float frequenceMedium = sum[3];
   float frequenceAigu = sum[5];
+  
+  fill(frequenceAigu * 255 * 10);
 
   ellipse(width /2, height / 2, frequenceBasse * 1000, frequenceBasse * 1000);
   ellipse(100, height / 2, frequenceMedium * 1000, frequenceMedium * 1000);
